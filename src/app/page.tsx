@@ -1,3 +1,5 @@
+ import ResumeUploader from "./components/ResumeUploader";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white">
@@ -12,46 +14,28 @@ export default function Home() {
           company-wise analysis and job recommendations.
         </p>
 
-        <div className="mt-16 border-2 border-dashed border-gray-500 rounded-3xl p-16 text-center hover:border-cyan-400 transition">
-
-          <h2 className="text-2xl font-semibold">
-            Upload Resume
-          </h2>
-
-          <p className="mt-4 text-gray-400">
-            Drag & Drop PDF/DOCX here
-          </p>
-
-          <button className="mt-8 bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-xl text-lg font-semibold">
-            Choose Resume
-          </button>
-
+        <div className="mt-16">
+          <ResumeUploader />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-20">
 
           <div className="bg-slate-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold">
-              ATS Score
-            </h3>
+            <h3 className="text-2xl font-bold">ATS Score</h3>
             <p className="mt-4 text-gray-400">
               Analyze resume compatibility.
             </p>
           </div>
 
           <div className="bg-slate-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold">
-              AI Suggestions
-            </h3>
+            <h3 className="text-2xl font-bold">AI Suggestions</h3>
             <p className="mt-4 text-gray-400">
               Improve your resume instantly.
             </p>
           </div>
 
           <div className="bg-slate-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold">
-              Job Recommendations
-            </h3>
+            <h3 className="text-2xl font-bold">Job Recommendations</h3>
             <p className="mt-4 text-gray-400">
               Discover the best matching roles.
             </p>
